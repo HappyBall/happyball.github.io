@@ -1,0 +1,383 @@
+<!DOCTYPE html >
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title></title>
+        <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Human Evaluation: Style transfer TTS with ASR</h1>
+            <table class="table table-bordered" id="table-spk-1">
+                <tbody>
+                    <tr>
+                        <td rowspan="18" class="speaker-grid">
+                            Speaker 1 <br><br> reference file: <br> <audio src="audio/p345_ref.wav" controls></audio>
+                        </th>
+                        <td rowspan="3" class="question-grid">Question 1</td>
+                        <td class="text-audio-grid">Text: WE OWN IT ALL AND SEVERAL</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_2_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_2_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 2</td>
+                        <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_103_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_103_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 3</td>
+                        <td class="text-audio-grid">Text: MEANING TO START FOR HOME EARLY NEXT MORNING</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_144_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_144_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 4</td>
+                        <td class="text-audio-grid">Text: I THINK THAT NONE OF US WILL DENY</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_162_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_162_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 5</td>
+                        <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_181_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_181_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 6</td>
+                        <td class="text-audio-grid">Text: I CAN NEVER GET RID OF THAT CONCEPTION</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p345_185_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p345_185_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <table class="table  table-bordered" id="table-spk-2">
+                <tbody>
+                    <tr>
+                        <td rowspan="18" class="speaker-grid">
+                            Speaker 2 <br><br> reference file: <br> <audio src="audio/p361_ref.wav" controls></audio>
+                        </th>
+                        <td rowspan="3" class="question-grid">Question 1</td>
+                        <td class="text-audio-grid">Text: WE OWN IT ALL AND SEVERAL</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_2_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_2_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 2</td>
+                        <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_103_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_103_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 3</td>
+                        <td class="text-audio-grid">Text: MEANING TO START FOR HOME EARLY NEXT MORNING</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_144_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_144_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 4</td>
+                        <td class="text-audio-grid">Text: I THINK THAT NONE OF US WILL DENY</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_162_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_162_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 5</td>
+                        <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_181_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_181_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 6</td>
+                        <td class="text-audio-grid">Text: I CAN NEVER GET RID OF THAT CONCEPTION</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p361_185_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p361_185_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <table class="table  table-bordered" id="table-spk-3">
+                <tbody>
+                    <tr>
+                        <td rowspan="18" class="speaker-grid">
+                            Speaker 3 <br><br> reference file: <br> <audio src="audio/p362_ref.wav" controls></audio>
+                        </th>
+                        <td rowspan="3" class="question-grid">Question 1</td>
+                        <td class="text-audio-grid">Text: WE OWN IT ALL AND SEVERAL</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_2_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_2_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 2</td>
+                        <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_103_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_103_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 3</td>
+                        <td class="text-audio-grid">Text: MEANING TO START FOR HOME EARLY NEXT MORNING</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_144_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_144_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 4</td>
+                        <td class="text-audio-grid">Text: I THINK THAT NONE OF US WILL DENY</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_162_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_162_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 5</td>
+                        <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_181_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_181_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 6</td>
+                        <td class="text-audio-grid">Text: I CAN NEVER GET RID OF THAT CONCEPTION</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p362_185_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p362_185_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <table class="table  table-bordered" id="table-spk-4">
+                <tbody>
+                    <tr>
+                        <td rowspan="18" class="speaker-grid">
+                            Speaker 4 <br><br> reference file: <br> <audio src="audio/p376_ref.wav" controls></audio>
+                        </th>
+                        <td rowspan="3" class="question-grid">Question 1</td>
+                        <td class="text-audio-grid">Text: WE OWN IT ALL AND SEVERAL</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_2_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_2_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 2</td>
+                        <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_103_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_103_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 3</td>
+                        <td class="text-audio-grid">Text: MEANING TO START FOR HOME EARLY NEXT MORNING</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_144_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_144_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 4</td>
+                        <td class="text-audio-grid">Text: I THINK THAT NONE OF US WILL DENY</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_162_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_162_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 5</td>
+                        <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_181_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_181_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="question-grid">Question 6</td>
+                        <td class="text-audio-grid">Text: I CAN NEVER GET RID OF THAT CONCEPTION</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 1: <audio src="audio/p376_185_1.wav" controls></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Audio 2: <audio src="audio/p376_185_2.wav" controls></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+    </body>
+</html>
