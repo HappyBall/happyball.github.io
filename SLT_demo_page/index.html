@@ -13,17 +13,25 @@
     </head>
     <body>
         <div class="container">
-            <h1>Demo</h1>
+            <h1 id="title">Demo</h1>
             <p><p>
-            <div class="table-title">Output audio of our model conditioned on reference audio and input text</div>
-            <table class="table table-bordered" id="table-spk-1">
+            <div class="table-title">Output audios of our model conditioned on the reference audio and input text compare to the baseline</div>
+            <table class="table table-bordered" id="table-1">
                 <tbody>
                     <tr>
-                        <td rowspan="2" class="question-grid">
-                            Speaker 1 <br><br> reference audio: <br> <audio src="audio/p345_ref.wav" controls></audio>
+                        <td rowspan="3" class="question-grid">
+                            Speaker 1 <br><br> Reference audio: <br> <audio src="audio/p345_ref.wav" controls></audio>
                         </td>
                         <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
                         <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p345_103_baseline.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p345_181_baseline.wav" controls></audio>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-audio-grid">
@@ -34,11 +42,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td rowspan="2" class="question-grid">
-                            Speaker 2 <br><br> reference audio: <br> <audio src="audio/p361_ref.wav" controls></audio>
+                        <td rowspan="3" class="question-grid">
+                            Speaker 2 <br><br> Reference audio: <br> <audio src="audio/p361_ref.wav" controls></audio>
                         </td>
                         <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
                         <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p361_103_baseline.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p361_181_baseline.wav" controls></audio>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-audio-grid">
@@ -49,11 +65,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td rowspan="2" class="question-grid">
-                            Speaker 3 <br><br> reference audio: <br> <audio src="audio/p362_ref.wav" controls></audio>
+                        <td rowspan="3" class="question-grid">
+                            Speaker 3 <br><br> Reference audio: <br> <audio src="audio/p362_ref.wav" controls></audio>
                         </td>
                         <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
                         <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p362_103_baseline.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p362_181_baseline.wav" controls></audio>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-audio-grid">
@@ -64,11 +88,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td rowspan="2" class="question-grid">
-                            Speaker 4 <br><br> reference audio: <br> <audio src="audio/p376_ref.wav" controls></audio>
+                        <td rowspan="3" class="question-grid">
+                            Speaker 4 <br><br> Reference audio: <br> <audio src="audio/p376_ref.wav" controls></audio>
                         </td>
                         <td class="text-audio-grid">Text: SUCH A COUNTENANCE SUCH MANNERS</td>
                         <td class="text-audio-grid">Text: HE GAVE HIS JOB THE FROZEN FACE</td>
+                    </tr>
+                    <tr>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p376_103_baseline.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Baseline: <br><audio src="audio/p376_181_baseline.wav" controls></audio>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-audio-grid">
@@ -80,6 +112,28 @@
                     </tr>
                 </tbody>
             </table> 
+            <div class="table-title">Improvement of the sound quality through the increase of the epochs</div>
+            <table class="table table-bordered" id="table-2">
+                <tbody>
+                    <tr>
+                        <td class="text-audio-grid">Text: I HAVE SAID ENOUGH</td>
+                        <td class="text-audio-grid">
+                            Reference audio: <audio src="audio/epoch_compare_ref.wav" controls></audio>
+                        </td>
+                    </tr>
+                        <td class="text-audio-grid">
+                            Epoch 0: <audio src="audio/epoch_0.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Epoch 50: <audio src="audio/epoch_50.wav" controls></audio>
+                        </td>
+                        <td class="text-audio-grid">
+                            Epoch 100: <audio src="audio/epoch_100.wav" controls></audio>
+                        </td>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
             <!--<table class="table  table-bordered" id="table-spk-2">
                 <tbody>
                     <tr>
