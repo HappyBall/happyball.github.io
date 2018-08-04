@@ -15,7 +15,7 @@
         <div class="container">
             <h1 id="title">Demo</h1>
             <p><p>
-            <div class="table-title">Output audios of our model conditioned on the reference audio and input text compare to the baseline</div>
+            <div class="table-title">Output audios of our model conditioned on the reference audio and input text compare to the baseline which is the GST-tacotron without ASR</div>
             <table class="table table-bordered" id="table-1">
                 <tbody>
                     <tr>
@@ -112,7 +112,8 @@
                     </tr>
                 </tbody>
             </table> 
-            <div class="table-title">Improvement of the sound quality through the increase of the epochs</div>
+            <div class="table-title">Improvement of the sound quality through the increase of the training epochs on the proposed approach</div>
+            <div id="annotation">*Epoch in the table means the training epoch with ASR error on the pre-trained tacotron model which has trained by 300 epochs without ASR error</div>
             <table class="table table-bordered" id="table-2">
                 <tbody>
                     <tr>
